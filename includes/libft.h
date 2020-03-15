@@ -18,7 +18,7 @@
 # include "libft_structs.h"
 # define HIMAGIC	0x8080808080808080L
 # define LOMAGIC	0x0101010101010101L
-# define HASHSIZE	12037
+# define START_MEMORY_SIZE 1024
 # define INITHASHSIZE 16
 # define MAX_FD 1024
 # define BUFF_SIZE 1024
