@@ -102,7 +102,8 @@ SRC =	ft_atoi_base.c \
 		fast_get_next_line.c \
 		ft_hash_tab.c \
 		ft_set.c \
-		ft_set_2.c
+		ft_set_2.c \
+		ft_init_memory.c
 #        ft_printf_src/apply_flags.c \
 #        ft_printf_src/data.c \
 #        ft_printf_src/e_double.c \

@@ -143,4 +143,5 @@ t_set			*ft_set_update(t_set *set);
 void			ft_hash_destroy(t_hash **hashtab, size_t size);
 void			ft_set_destroy(t_set **set);
 long long int	ft_ceil_ll(long double nbr);
+t_mem			*ft_init_memory(void);
 #endif
