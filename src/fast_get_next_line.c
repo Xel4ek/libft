@@ -31,21 +31,19 @@ static t_mem	*ft_realloc_mem(t_mem *memory, size_t dif)
 	return (memory);
 }
 
-static char		*ft_strjoin_mem(t_mem *const memory, char *const string)
+static char		*ft_strjoin_mem(t_mem *const memory, char *const string, int ret)
 {
 	long long int	dif;
-	size_t			len;
 
 	if (memory && string)
 	{
-		len = ft_strlen(string);
-		dif = (long long int)(((memory->end - memory->head) + len) - \
+		dif = (long long int)(((memory->end - memory->head) + ret) - \
 		memory->size);
 		if (dif > 0)
 			if (!ft_realloc_mem(memory, dif))
 				return (0);
-		ft_memcpy(memory->end, string, len + 1);
-		memory->end += len;
+		ft_memcpy(memory->end, string, ret + 1);
+		memory->end += ret;
 		return (memory->current);
 	}
 	return (NULL);
@@ -62,7 +60,7 @@ int				fast_get_next_line(const int fd, char **line, \
 	while ((ret = read(fd, buf, BUFF_SIZE)))
 	{
 		buf[ret] = 0;
-		ft_strjoin_mem(memory, buf);
+		ft_strjoin_mem(memory, buf, ret);
 		if ((memory->endl = ft_strch(memory->current, '\n')))
 			break ;
 	}
@@ -88,7 +86,7 @@ int				fast_read_in_memory(const int fd, t_mem *const memory)
 	while ((ret = read(fd, buf, BUFF_SIZE)))
 	{
 		buf[ret] = 0;
-		ft_strjoin_mem(memory, buf);
+		ft_strjoin_mem(memory, buf, ret);
 	}
 	memory->current = NULL;
 	return (0);
