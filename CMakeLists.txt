@@ -89,7 +89,7 @@ set(SRC
         src/ft_heap_merge.c
         src/fast_get_next_line.c
         src/ft_hash_tab.c src/ft_set.c src/ft_set_2.c
-        src/ft_init_memory.c src/ft_mod.c)
+        src/ft_init_memory.c src/ft_mod.c src/ft_heap_extract_min.c)
 set(HEADERS
         includes/libft.h)
 

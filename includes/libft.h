@@ -126,7 +126,7 @@ void			ft_lstd_pop_front_head_only(t_list **head);
 char			*ft_strcpy_end(char *dst, const char *src);
 t_list			*ft_lstd_wrap(void *content, size_t content_size);
 t_heap			*ft_heap_merge(t_heap *first, t_heap *second);
-t_heap			*ft_wrap_heap(int key, void *value);
+t_heap			*ft_wrap_heap(size_t key, void *value);
 void			*ft_pop_min_heap(t_heap **heap, int *key);
 t_heap			*ft_heap_add(t_heap *heap, t_heap *new_item);
 int				fast_get_next_line(const int fd, char **line, \
@@ -145,4 +145,6 @@ void			ft_set_destroy(t_set **set);
 long long int	ft_ceil_ll(long double nbr);
 t_mem			*ft_init_memory(void);
 int32_t			ft_mod(int32_t num, size_t mod);
+void			*ft_heap_extract_min(t_heap **heap, int *key);
+t_heap 			*ft_heap_get_min(t_heap **heap);
 #endif

@@ -104,7 +104,8 @@ SRC =	ft_atoi_base.c \
 		ft_set.c \
 		ft_set_2.c \
 		ft_init_memory.c \
-		ft_mod.c
+		ft_mod.c \
+		ft_heap_extract_min.c
 
 
 

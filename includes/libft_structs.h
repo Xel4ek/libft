@@ -40,7 +40,7 @@ typedef struct				s_list
 
 typedef struct				s_heap
 {
-	int						key;
+	size_t					key;
 	int						dist;
 	struct s_heap			*left;
 	struct s_heap			*right;
