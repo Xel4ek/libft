@@ -144,4 +144,5 @@ void			ft_hash_destroy(t_hash **hashtab, size_t size);
 void			ft_set_destroy(t_set **set);
 long long int	ft_ceil_ll(long double nbr);
 t_mem			*ft_init_memory(void);
+int32_t			ft_mod(int32_t num, size_t mod);
 #endif

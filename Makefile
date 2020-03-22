@@ -103,19 +103,8 @@ SRC =	ft_atoi_base.c \
 		ft_hash_tab.c \
 		ft_set.c \
 		ft_set_2.c \
-		ft_init_memory.c
-#        ft_printf_src/apply_flags.c \
-#        ft_printf_src/data.c \
-#        ft_printf_src/e_double.c \
-#        ft_printf_src/e_double_tool.c \
-#        ft_printf_src/f_double.c \
-#        ft_printf_src/ft_printf.c \
-#        ft_printf_src/int_funcions.c \
-#        ft_printf_src/parse.c \
-#        ft_printf_src/parse_tool.c \
-#        ft_printf_src/print_tool.c \
-#        ft_printf_src/string_tool.c \
-#        ft_printf_src/tools.c \
+		ft_init_memory.c \
+		ft_mod.c
 
 
 
